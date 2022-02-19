@@ -1,0 +1,4 @@
+(u'Toyota-2017', 0)
+(u'Nissan-2003', 1)
+(u'Mercedes-2015', 2)
+(u'Mercedes-2016', 1)
