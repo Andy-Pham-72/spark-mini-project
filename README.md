@@ -25,7 +25,7 @@ $ spark-submit AutoSaleExtractSpark.py
 ```
 
 # Step 4:
-Double check the [final_output.txt] file in the SandBox's Web Shell Client:
+Double check the **final_output.txt** file in the SandBox's Web Shell Client:
 ```bash
 $ cat final_output.txt
 ```
