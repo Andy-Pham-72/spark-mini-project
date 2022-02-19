@@ -27,7 +27,7 @@ print(final_output)
 with open("final_output.txt", "w") as output:
     for val in final_output:
         print(val)
-        output.write(str(val) + "\n")
+        output.write(str(val).strip("( )") + "\n")
         
 # Stop Spark Application
 sc.stop()
