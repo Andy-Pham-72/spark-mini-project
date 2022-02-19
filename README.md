@@ -31,5 +31,5 @@ $ cat final_output.txt
 ```
 ![Screen Shot 2022-02-18 at 8 08 50 PM](https://user-images.githubusercontent.com/70767722/154779913-47961896-27df-4177-b0aa-04dfbfd0c8b9.png)
 
-
-
+Reference:
+- Difference between `groupByKey()` and `reduceByKey()` in Spark [Link](https://www.hadoopinrealworld.com/what-is-the-difference-between-groupbykey-and-reducebykey-in-spark/)
