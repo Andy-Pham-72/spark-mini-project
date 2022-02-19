@@ -8,13 +8,13 @@ from CarSaleETL import extract_vin_key_value, populate_make, extract_make_key_va
 sc = SparkContext("local", "My Application")
 
 # Load csv file
-raw_rdd = sc.textFile("test_dir/data.csv")
+raw_rdd = sc.textFile("test_dir/data.csv")  # Recall that we saved the data.csv file in the HDFS directory "/user/root/test_dir/"
 
 # Use map operation to produce PairRDD
 vin_kv = raw_rdd.map(lambda x: extract_vin_key_value(x))
 
 # Populate make and year to all the records
-enhance_make = vin_kv.groupByKey().flatMap(lambda kv: populate_make(kv[1]))
+enhance_make = vin_kv.groupByKey().flatMap(lambda kv: populate_make(kv[1])) # Using kv[1] because we only want to iterate through all the values of the vin_number keys 
 
 # Count the number of occurence for accidents of vehicle make and year
 make_kv = enhance_make.map(lambda list_val: extract_make_key_value(list_val))
