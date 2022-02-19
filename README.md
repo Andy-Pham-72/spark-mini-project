@@ -31,5 +31,12 @@ $ cat final_output.txt
 ```
 ![Screen Shot 2022-02-18 at 8 08 50 PM](https://user-images.githubusercontent.com/70767722/154779913-47961896-27df-4177-b0aa-04dfbfd0c8b9.png)
 
+# Step 5:
+Download **final_output.txt** file from SandBox's Web Shell Client's root directory. From local Terminal, run below command:
+```bash
+$ scp -P 2222 root@127.0.0.1:/root/final_output.txt [local directory]
+```
+
+
 Reference:
 - Difference between `groupByKey()` and `reduceByKey()` in Spark [Link](https://www.hadoopinrealworld.com/what-is-the-difference-between-groupbykey-and-reducebykey-in-spark/)
