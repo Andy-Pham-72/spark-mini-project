@@ -36,6 +36,7 @@ Download **final_output.txt** file from SandBox's Web Shell Client's root direct
 ```bash
 $ scp -P 2222 root@127.0.0.1:/root/final_output.txt [local directory]
 ```
+![Screen Shot 2022-02-19 at 4 33 09 PM](https://user-images.githubusercontent.com/70767722/154819813-31b7936f-4bb6-4460-9a5a-bf32d3444260.png)
 
 
 Reference:
